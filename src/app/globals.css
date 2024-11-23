@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  text-decoration: none;
+  list-style: none;
+}
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+@layer components {
+  .btn-primary {
+    @apply py-2 px-5 bg-white text-black font-semibold rounded-full shadow-md hover:bg-gray-900 hover:text-white focus:outline-none focus:ring focus:ring-gray-500 focus:ring-opacity-75;
+  }
+}
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}

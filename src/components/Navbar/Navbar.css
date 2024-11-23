@@ -1,0 +1,30 @@
+.Navbar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    position: fixed;
+    & ul{
+        display: flex;
+        background: var(--background);
+        align-items: center;
+        width: 80%;
+        height: 70%;
+        border-radius: 10px;
+        justify-content: space-around;
+        color: var(--foreground);
+        border: 1px solid lavender;
+        & li,.li{
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+            padding: 5px;
+        }
+        & li:hover{
+            color: var(--background);
+            background: var(--foreground);
+        }
+    }
+}
